@@ -21,7 +21,7 @@ contract BuyMeACoffee {
 
     Memo[] memos;
 
-    // Address if the contract deployer
+    // Address of the contract deployer
     address payable owner;
 
     // Constructor is run only when the contract is deployed
