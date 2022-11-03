@@ -29,15 +29,15 @@ async function main() {
 
   // Get the contract to deploy
   const BuyMeACoffee = await ethers.getContractFactory("BuyMeACoffee");
-  const buyMeACoffee = await BuyMeACoffee.deploy();
 
   // Deploy the contract
+  const buyMeACoffee = await BuyMeACoffee.deploy();
   await buyMeACoffee.deployed();
   console.log("BuyMeACoffee deployed to", buyMeACoffee.address);
 
   // Check balances before the coffee purchase
-  const addresses = [owner.address, tipper.address, buyMeACoffee.address];
   console.log("=== start ===");
+  const addresses = [owner.address, tipper.address, buyMeACoffee.address];
   await printBalances(addresses);
 
   // Buy the owner a few coffees
