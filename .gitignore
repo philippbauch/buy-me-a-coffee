@@ -1,7 +1,9 @@
-node_modules
 .env
+.parcel-cache
 coverage
 coverage.json
+dist
+node_modules
 typechain
 typechain-types
 
