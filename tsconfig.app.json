@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react",
+    "resolveJsonModule": true
+  },
+  "files": ["web/index.tsx", "web/App.tsx"],
+  "include": ["abi/**/*.json", "web/**/*.d.ts"]
+}

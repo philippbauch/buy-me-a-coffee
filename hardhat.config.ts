@@ -16,6 +16,7 @@ if (typeof PRIVATE_KEY === "undefined") {
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
   networks: {
+    hardhat: {},
     goerli: {
       url: GOERLI_URL,
       accounts: [PRIVATE_KEY],

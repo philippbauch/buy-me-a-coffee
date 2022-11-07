@@ -1,15 +1,15 @@
 {
-  "name": "week-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "buy-me-a-coffee",
   "scripts": {
     "start": "parcel web/index.html",
     "postinstall": "cp -n .env.example .env"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "modern-normalize": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "@types/react": "^18.0.25",
@@ -18,10 +18,5 @@
     "hardhat": "^2.12.1",
     "parcel": "^2.7.0",
     "process": "^0.11.10"
-  },
-  "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }
